@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using _02_ocp.Vehicles;
+using System;
+
 
 namespace _02_ocp
 {
@@ -10,6 +8,19 @@ namespace _02_ocp
     {
         static void Main(string[] args)
         {
+            TypeVehicle type = TypeVehicle.CAR;
+
+            if(type == TypeVehicle.CAR)
+            {
+                Car vehicle = new Car("Azul", 2022, 2.0, 5, 4);
+
+            }
+            else
+            {
+                Motorcycle vehicle = new Motorcycle("Branco", 2021, 250);
+            }
+
+            Console.ReadLine();
         }
     }
 }
